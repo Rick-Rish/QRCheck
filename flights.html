@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qatar Airways PTFS</title>
+  <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1404695068887089172/1411870719494590574/Screenshot_2025-08-12_153357.png?ex=68b63a92&is=68b4e912&hm=02f799493f8451e5c8cc6517b3f6887599e2fa007a1a7e92f5d258249b7e996b">
+
+  <link rel="stylesheet" href="flights.css">
+</head>
+<body>
+  <h1 style="color: #ffffff;">Book Here - Fly Smooth</h1>
+
+
+  <nav> 
+  <a href="index.html">Home</a>
+  <a href="#">Flights</a>
+  <a href="https://discord.gg/ydzzaqx3"target="_blank">Discord</a>
+  <a href="#">Careers</a>
+  <a href="#">About Us</a>
+  <a href="#">Avios Miles</a>
+</nav>
+
+
+<h1 id="QR-Main-Header">Flights with Qatar Airways</h1>
+
+<p id="noFlightsMessage">No flights available</p>
+
+
+  <div class="flight-card" data-available="false">
+    <h3> QR443</h3>
+    <p>Departing: Doha</p>
+    <p>Arriving: LAX</p>
+    <p>Aircraft: Boeing 777</p>
+    <p>Time: 1:00 EST</p>
+    <p id="seatCounter">Seats Booked: 0 / 172</p>
+    <button id="bookBtn" class="book-btn">Book Here</button>
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-card">
+      <h2>Confirm Booking</h2>
+      <p><strong>Flight:</strong> QR444</p>
+      <p><strong>Departing:</strong> Doha</p>
+      <p><strong>Arriving:</strong> LAX</p>
+      <p><strong>Aircraft:</strong> Boeing 777</p>
+      <p><strong>Time:</strong> 1:00 EST</p>
+      <p id="popupSeatCounter">Seats Booked: 0 / 172</p>
+      <button id="confirmBtn" class="confirm-btn">Confirm Booking</button>
+    </div>
+  </div>
+
+<script src="flights.js"></script>
+<body>
+</html>
