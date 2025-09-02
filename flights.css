@@ -1,0 +1,241 @@
+@import url('https://db.onlinewebfonts.com/c/09fc87e1ac5bbdeb5c42b2c1ec4f780f?family=Jotia+W00+Regular');
+
+h1 {
+    margin-top: 200px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 80px;
+    top: -60px;
+    font-family: 'Jotia W00 Regular', sans-serif;
+
+    
+}
+
+body {
+    width: 100;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.discordapp.com/attachments/1395154926715408416/1412164140126044391/HN_Aquasition_2025_image_6.jpg?ex=68b74bd7&is=68b5fa57&hm=8d1f37f5b5d0fd6b9dee81d311f59bfcca3f46c5d2731d0e8d30c14b5691ee54);
+
+}
+
+#QR-Main-Header {
+    color: rgb(176, 0, 0);
+    text-align: center;
+    padding-left: 30px;
+    position: relative;
+    top: -40px;
+    padding-right: 50px;
+
+}
+
+nav {
+    height: 100vh;
+    width: 70vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0, 00.1);
+     background-image: url('https://cdn.discordapp.com/attachments/1408835017051865140/1411457294872612874/IMG_4163-removebg-preview.png?ex=68b4b98a&is=68b3680a&hm=b9a9d2ddde18b78e67efd769918af22659c3e14f7325aafa6592b9a3adc7d237');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+     
+    
+
+}
+
+nav.scrolled {
+  background-color: rgb(153, 0, 0); /* Qatar Airways red */
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 18px;
+    padding: 0 10px
+    
+    
+}
+a:after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 100;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover:after {
+    width: 100;
+}
+
+nav {
+   height: 60px;                 
+  width: 100%;              
+  display: flex;
+  align-items: center;    
+  justify-content: center;     
+  position: fixed;             
+  top: 0;
+  left: 0;
+}
+
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);              
+    font-size: 18px;
+    padding: 0 10px;
+    font-weight: bold;
+    
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 3px;
+    width: 0;                  
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+a:hover:after {
+    width: 100%;               
+}
+
+/* =======================
+   Flight Card Styling
+======================= */
+.flight-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  max-width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  color: rgb(183, 0, 0);
+  font-family: Arial, sans-serif;
+  position: relative;
+  
+}
+
+.book-btn {
+  background-color: rgb(156, 0, 0);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.book-btn:hover {
+    background-color: red;
+  transform: scale(1.05);
+
+}
+
+/* =======================
+   Popup Overlay
+======================= */
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  z-index: 1000;
+}
+
+.popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* =======================
+   Popup Card Styling
+======================= */
+.popup-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 14px;
+  width: 450px;
+  max-width: 90%;
+  text-align: center;
+  color: rgb(114, 0, 0);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup.active .popup-card {
+  transform: scale(1);
+}
+
+/* Confirm Booking Button */
+.confirm-btn {
+  background-color: rgb(145, 0, 0);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.confirm-btn:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+/* Seat Counter Text */
+#seatCounter,
+#popupSeatCounter {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(116, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#noFlightsMessage {
+  text-align: center;   /* centers the text horizontally */
+  font-size: 18px;      /* optional: make it bigger */
+  color: rgb(118, 0, 0);           /* optional: match flight card color */
+  margin-top: 20px;     /* optional spacing from top */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page fade in/out */
+html {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+html.fade-in {
+  opacity: 1;
+}
+
+html.fade-out {
+  opacity: 0;
+}
